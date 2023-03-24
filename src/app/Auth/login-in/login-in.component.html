@@ -1,0 +1,26 @@
+<form (ngSubmit)="onRegister()" #myForm="ngForm">
+  <div class="input-group">
+    <label for="name">Nickname</label>
+    <input type="text" name="name" required #nameInput="ngModel" id="name" [(ngModel)]="register.nickname" />
+    <p class="error-message">*ngIf=" {{ nameInput.valid }}</p>
+  </div>
+  <div class="input-group">
+    <label for="name">name</label>
+    <input type="text" name="name" required id="name" [(ngModel)]="register.name" />
+    <p class="error-message">This field is required</p>
+  </div>
+  <div class="input-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" required id="email" [(ngModel)]="register.email" />
+    <p class="error-message">This field is required</p>
+  </div>
+  <div class="input-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" required id="password" [(ngModel)]="register.password" />
+    <p class="error-message">This field is required</p>
+  </div>
+
+  <button [disabled]="myForm.invalid" type="submit">Crear</button>
+
+</form>
+

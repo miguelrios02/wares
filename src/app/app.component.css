@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wires {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  background: rgb(22, 32, 42);
+  color: white;
+}
+.semicirculo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 400px;
+  height: 800px;
+  border-radius: 400px 0 0 400px;
+  background: rgb(104, 112, 66);
+}
+.title1 {
+  padding-top: 2rem;
+  width: 60%;
+  z-index: 3;
+  position: relative;
+}
+.title2 {
+  padding-top: 2rem;
+  width: 60%;
+  z-index: 3;
+  position: relative;
+}
+.title3 {
+  padding-top: 2rem;
+  z-index: 3;
+  position: relative;
+  text-align: end;
+}
+.title4 {
+  padding-top: 2rem;
+  z-index: 3;
+  position: relative;
+  text-align: end;
+}
+.logo {
+  position: relative;
+  display: flex;
+  z-index: 3;
+}
+.wires-content2 {
+  display: grid;
+  padding-top: 2rem;
+  grid-template: 50% 50% /120px 80%;
+  z-index: 3;
+  position: relative;
+}
+.wires-content3 {
+  text-align: end;
+  gap: 1rem;
+  padding-top: 2rem;
+  display: grid;
+  grid-template: 50% 50% /70% 120px;
+  z-index: 3;
+}
+.scaner {
+  margin-top: 5rem;
+  color: rgb(64, 66, 63);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  opacity: 0.2;
+}
+.scaner-title {
+  width: 230px;
+}
+.icons {
+  display: grid;
+  grid-template: 150px 150px /50% 50%;
+  gap: 3rem;
+  padding: 5rem;
+}
+.icons-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons-icon:hover {
+  border-radius: 1rem;
+  background-color: white;
+  opacity: 0.2;
+}
+.btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+}
+.btn-s {
+  width: 200px;
+  height: 60px;
+  font-size: 1.5rem;
+  color: rgb(249, 253, 109);
+  border-radius: 1rem;
+  border-color: rgb(249, 253, 109);
+  background: rgb(22, 32, 42);
+}
+.btn-s:hover {
+  background: rgb(249, 253, 109);
+  cursor: pointer;
+  color: rgb(22, 32, 42);
+}

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'wires-frontend';
+
+  btnDisabled = false;
+  toggleButton() {
+    this.btnDisabled = !this.btnDisabled;
+  }
 }
